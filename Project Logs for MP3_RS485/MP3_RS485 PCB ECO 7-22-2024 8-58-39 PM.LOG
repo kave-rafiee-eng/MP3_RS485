@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=RX2 Pin=U2-12
+Added Pin To Net: NetName=RX_MP3 Pin=MCU1-9
+Added Pin To Net: NetName=RX_MP3 Pin=U2-12
+Added Net: Name=RX_MP3

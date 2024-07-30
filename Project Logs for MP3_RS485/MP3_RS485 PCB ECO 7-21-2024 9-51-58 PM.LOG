@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=BUSY_MP3 Pin=MCU1-7
+Removed Pin From Net: NetName=MP3_PWR Pin=MCU1-8
+Added Pin To Net: NetName=LED_MCU Pin=MCU1-2
+Added Pin To Net: NetName=MP3_PWR Pin=MCU1-7
+Added Pin To Net: NetName=BUSY_MP3 Pin=MCU1-8

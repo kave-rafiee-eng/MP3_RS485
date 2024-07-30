@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=+5_MP3 Pin=R23-2
+Removed Pin From Net: NetName=+3.3 Pin=U2-5
+Added Component: Designator=C?(CAP-0805)
+Added Pin To Net: NetName=GND Pin=C?-2
+Added Pin To Net: NetName=+3.3_MP3 Pin=C?-1
+Added Pin To Net: NetName=+3.3_MP3 Pin=R23-2
+Added Pin To Net: NetName=+3.3_MP3 Pin=U2-5
+Added Net: Name=+3.3_MP3
+Added Member To Class: ClassName=U_MP3 Member=Component C? 1uF

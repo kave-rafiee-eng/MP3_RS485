@@ -1,0 +1,80 @@
+Removed Pin From Net: NetName=+3.3 Pin=C5-1
+Removed Pin From Net: NetName=GND Pin=C5-2
+Removed Pin From Net: NetName=GND Pin=C6-2
+Removed Pin From Net: NetName=GND Pin=C7-1
+Removed Pin From Net: NetName=+3.3 Pin=C7-2
+Removed Pin From Net: NetName=MP3_PWR Pin=IC1-3
+Removed Pin From Net: NetName=BUSY_MP3 Pin=IC1-6
+Removed Pin From Net: NetName=IN1 Pin=IC1-15
+Removed Pin From Net: NetName=IN2 Pin=IC1-19
+Removed Pin From Net: NetName=IN3 Pin=IC1-20
+Removed Pin From Net: NetName=IN4 Pin=IC1-21
+Removed Pin From Net: NetName=SWDIO Pin=IC1-23
+Removed Pin From Net: NetName=SWCLK Pin=IC1-24
+Removed Pin From Net: NetName=GND Pin=IC1-boot0
+Removed Pin From Net: NetName=GND Pin=IC1-gnd
+Removed Pin From Net: NetName=GND Pin=IC1-gnd
+Removed Pin From Net: NetName=+3.3 Pin=IC1-vcc
+Removed Pin From Net: NetName=+3.3 Pin=IC1-vcc
+Removed Pin From Net: NetName=+3.3 Pin=IC1-vdda
+Removed Member From Class: ClassName=U_MCU Member=C5
+Removed Member From Class: ClassName=U_MCU Member=C6
+Removed Member From Class: ClassName=U_MCU Member=C7
+Removed Member From Class: ClassName=U_MCU Member=IC1
+Change Component Designator: OldDesignator=C? NewDesignator=C1
+Change Component Designator: OldDesignator=R? NewDesignator=R2
+Change Component Designator: OldDesignator=R? NewDesignator=R3
+Change Component Designator: OldDesignator=R? NewDesignator=R4
+Added Component: Designator=LED3(LED/0805)
+Added Component: Designator=MCU1(stm32G030F6P6)
+Added Component: Designator=Q3(SOT23)
+Added Component: Designator=Q5(SOT23)
+Added Component: Designator=R1(RES/0603)
+Added Pin To Net: NetName=GND Pin=LED3-K
+Added Pin To Net: NetName=GND Pin=MCU1-4
+Added Pin To Net: NetName=+3.3 Pin=MCU1-5
+Added Pin To Net: NetName=BUSY_MP3 Pin=MCU1-7
+Added Pin To Net: NetName=MP3_PWR Pin=MCU1-8
+Added Pin To Net: NetName=IN1 Pin=MCU1-11
+Added Pin To Net: NetName=IN2 Pin=MCU1-12
+Added Pin To Net: NetName=IN3 Pin=MCU1-13
+Added Pin To Net: NetName=IN4 Pin=MCU1-14
+Added Pin To Net: NetName=SWDIO Pin=MCU1-18
+Added Pin To Net: NetName=SWCLK Pin=MCU1-19
+Added Pin To Net: NetName=NetQ3_1 Pin=Q3-1
+Added Pin To Net: NetName=NetQ3_2 Pin=Q3-2
+Added Pin To Net: NetName=+24 Pin=Q3-3
+Added Pin To Net: NetName=NetQ3_1 Pin=Q5-1
+Added Pin To Net: NetName=NetQ3_2 Pin=Q5-2
+Added Pin To Net: NetName=GND Pin=Q5-3
+Added Pin To Net: NetName=+3.3 Pin=R1-2
+Change Net Name : Old Net Name=NetC?_2 New Net Name=NetC1_2
+Change Net Name : Old Net Name=NetR?_1 New Net Name=NetR4_1
+Change Net Name : Old Net Name=NetR?_2 New Net Name=NetR2_2
+Added Pin To Net: NetName=LED_MCU Pin=R6-2
+Added Net: Name=LED_MCU
+Added Pin To Net: NetName=NetLED3_A Pin=LED3-A
+Added Pin To Net: NetName=NetLED3_A Pin=R1-1
+Added Net: Name=NetLED3_A
+Added Pin To Net: NetName=NetMCU1_6 Pin=MCU1-6
+Added Pin To Net: NetName=NetMCU1_6 Pin=R5-2
+Added Net: Name=NetMCU1_6
+Added Pin To Net: NetName=RX1 Pin=MCU1-1
+Added Pin To Net: NetName=RX1 Pin=R34-2
+Added Pin To Net: NetName=RX1 Pin=Z4-K
+Added Net: Name=RX1
+Added Pin To Net: NetName=RX2 Pin=MCU1-10
+Added Pin To Net: NetName=RX2 Pin=U2-12
+Added Net: Name=RX2
+Added Pin To Net: NetName=TX1 Pin=IC3-2
+Added Pin To Net: NetName=TX1 Pin=MCU1-20
+Added Net: Name=TX1
+Added Pin To Net: NetName=TX2 Pin=MCU1-9
+Added Net: Name=TX2
+Added Member To Class: ClassName=U_Power_Low_V Member=Component LED3 LED-1COLER
+Added Member To Class: ClassName=U_MCU Member=Component MCU1 STM32G030F6P6
+Added Member To Class: ClassName=U_SER_24V Member=Component Q3 PNP
+Added Member To Class: ClassName=U_SER_24V Member=Component Q5 NPN
+Added Member To Class: ClassName=U_Power_Low_V Member=Component R1 1K
+Added Member To Class: ClassName=U_SER_24V Member=Component R2 120R
+Added Member To Class: ClassName=U_SER_24V Member=Component R4 1K

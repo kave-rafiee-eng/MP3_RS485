@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=GND Pin=C26-1
+Removed Pin From Net: NetName=+5 Pin=C26-2
+Removed Member From Class: ClassName=U_Power_Low_V Member=C26
+Change Component Footprint: Designator=C27 Old Footprint=CAP-1206 New Footprint=CAP-0603
+Change Component Comment : Designator=C27 Old Comment=22uF New Comment=100nF

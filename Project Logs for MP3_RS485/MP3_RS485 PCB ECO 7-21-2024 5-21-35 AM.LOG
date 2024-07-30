@@ -1,0 +1,26 @@
+Removed Pin From Net: NetName=TX1 Pin=IC3-2
+Removed Pin From Net: NetName=NetC1_2 Pin=IC3-6
+Removed Pin From Net: NetName=+24 Pin=Q3-3
+Removed Pin From Net: NetName=GND Pin=Q5-3
+Removed Pin From Net: NetName=NetIC3_3 Pin=R30-2
+Removed Pin From Net: NetName=NetIC3_3 Pin=R32-2
+Added Component: Designator=R9(RES/1206)
+Added Pin To Net: NetName=NetC1_2 Pin=IC3-5
+Added Pin To Net: NetName=GND Pin=Q3-2
+Added Pin To Net: NetName=+24 Pin=Q5-2
+Added Pin To Net: NetName=TX1 Pin=R9-1
+Added Pin To Net: NetName=NetIC3_3 Pin=R9-2
+Added Pin To Net: NetName=NetC1_2 Pin=R31-2
+Added Pin To Net: NetName=NetIC3_2 Pin=IC3-2
+Added Pin To Net: NetName=NetIC3_2 Pin=R30-2
+Added Pin To Net: NetName=NetIC3_2 Pin=R32-2
+Added Net: Name=NetIC3_2
+Added Pin To Net: NetName=NetIC3_6 Pin=IC3-6
+Added Pin To Net: NetName=NetIC3_6 Pin=R35-2
+Added Pin To Net: NetName=NetIC3_6 Pin=R36-2
+Added Net: Name=NetIC3_6
+Added Pin To Net: NetName=NetQ3_3 Pin=Q3-3
+Added Pin To Net: NetName=NetQ3_3 Pin=Q5-3
+Added Pin To Net: NetName=NetQ3_3 Pin=R2-1
+Added Net: Name=NetQ3_3
+Added Member To Class: ClassName=U_SER_24V Member=Component R9 10K

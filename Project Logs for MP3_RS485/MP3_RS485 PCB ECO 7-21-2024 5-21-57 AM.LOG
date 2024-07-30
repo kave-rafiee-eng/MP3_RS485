@@ -1,0 +1,33 @@
+Change Net Name : Old Net Name=NetR2_2 New Net Name=SER_B
+Change Net Name : Old Net Name=NetR4_1 New Net Name=SER_A
+Added Pin To Net: NetName=+24_P Pin=C24-1
+Added Pin To Net: NetName=+24_P Pin=D6-K
+Added Pin To Net: NetName=+24_P Pin=IC2-7
+Added Pin To Net: NetName=+24_P Pin=R24-1
+Added Net: Name=+24_P
+Added Pin To Net: NetName=NetC22_2 Pin=C22-2
+Added Net: Name=NetC22_2
+Added Pin To Net: NetName=NetJ1_1 Pin=J1-1
+Added Net: Name=NetJ1_1
+Added Pin To Net: NetName=NetJ1_2 Pin=J1-2
+Added Net: Name=NetJ1_2
+Added Pin To Net: NetName=NetJ1_8 Pin=J1-8
+Added Net: Name=NetJ1_8
+Added Pin To Net: NetName=NetJ1_9 Pin=J1-9
+Added Net: Name=NetJ1_9
+Added Pin To Net: NetName=NetMCU1_2 Pin=MCU1-2
+Added Net: Name=NetMCU1_2
+Added Pin To Net: NetName=NetMCU1_3 Pin=MCU1-3
+Added Net: Name=NetMCU1_3
+Added Pin To Net: NetName=NetMCU1_15 Pin=MCU1-15
+Added Net: Name=NetMCU1_15
+Added Pin To Net: NetName=NetMCU1_16 Pin=MCU1-16
+Added Net: Name=NetMCU1_16
+Added Pin To Net: NetName=NetMCU1_17 Pin=MCU1-17
+Added Net: Name=NetMCU1_17
+Added Pin To Net: NetName=NetU2_10 Pin=U2-10
+Added Net: Name=NetU2_10
+Added Pin To Net: NetName=NetU2_11 Pin=U2-11
+Added Net: Name=NetU2_11
+Added Pin To Net: NetName=NetU2_13 Pin=U2-13
+Added Net: Name=NetU2_13

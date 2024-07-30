@@ -1,0 +1,18 @@
+Removed Pin From Net: NetName=GND Pin=PROG1-1
+Removed Pin From Net: NetName=+3.3 Pin=PROG1-2
+Removed Pin From Net: NetName=SWCLK Pin=PROG1-3
+Removed Pin From Net: NetName=SWDIO Pin=PROG1-4
+Removed Member From Class: ClassName=U_MCU Member=PROG1
+Added Component: Designator=PROG(XH3)
+Added Pin To Net: NetName=GND Pin=PROG-1
+Added Pin To Net: NetName=SWCLK Pin=PROG-2
+Added Pin To Net: NetName=SWDIO Pin=PROG-3
+Added Member To Class: ClassName=U_MCU Member=Component PROG XH3
+Added Room: Name=1
+Added Room: Name=2
+Added Room: Name=3
+Added Room: Name=4
+Added Room: Name=Multi
+Added Room: Name=U_MCU
+Added Room: Name=U_MP3
+Added Room: Name=U_Power_Low_V
