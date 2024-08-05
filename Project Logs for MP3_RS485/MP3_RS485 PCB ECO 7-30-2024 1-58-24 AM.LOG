@@ -1,0 +1,12 @@
+Added Component: Designator=Q3(SOT-89)
+Added Component: Designator=Q5(SOT-89)
+Added Pin To Net: NetName=NetQ3_1 Pin=Q3-1
+Added Pin To Net: NetName=GND Pin=Q3-2
+Added Pin To Net: NetName=GND Pin=Q3-2
+Added Pin To Net: NetName=NetQ3_3 Pin=Q3-3
+Added Pin To Net: NetName=NetQ3_1 Pin=Q5-1
+Added Pin To Net: NetName=+24 Pin=Q5-2
+Added Pin To Net: NetName=+24 Pin=Q5-2
+Added Pin To Net: NetName=NetQ3_3 Pin=Q5-3
+Added Member To Class: ClassName=U_SER_24V Member=Component Q3 PNP
+Added Member To Class: ClassName=U_SER_24V Member=Component Q5 NPN

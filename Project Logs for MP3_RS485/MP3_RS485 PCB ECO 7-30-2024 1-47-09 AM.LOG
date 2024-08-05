@@ -1,0 +1,92 @@
+Removed Pin From Net: NetName=SER_B Pin=R2-2
+Removed Pin From Net: NetName=NetQ4_G Pin=R21-1
+Change Component Footprint: Designator=C32 Old Footprint=CAP-0603 New Footprint=CAP-0805
+Change Component Footprint: Designator=C33 Old Footprint=CAP-0603 New Footprint=CAP-0805
+Change Component Footprint: Designator=C14 Old Footprint=CAP-0805 New Footprint=CAP-0603
+Change Component Footprint: Designator=C15 Old Footprint=CAP-0805 New Footprint=CAP-0603
+Change Component Footprint: Designator=Z1_1 Old Footprint=DIOD/RS1J New Footprint=mini_melf
+Change Component Footprint: Designator=Z1_2 Old Footprint=DIOD/RS1J New Footprint=mini_melf
+Change Component Footprint: Designator=Z1_3 Old Footprint=DIOD/RS1J New Footprint=mini_melf
+Change Component Footprint: Designator=Z1_4 Old Footprint=DIOD/RS1J New Footprint=mini_melf
+Change Component Footprint: Designator=R23 Old Footprint=RES/0603 New Footprint=RES/0805
+Change Component Footprint: Designator=R26 Old Footprint=RES/0603 New Footprint=RES/0805
+Change Component Footprint: Designator=Q3 Old Footprint=SOT23 New Footprint=SOT-89
+Change Component Footprint: Designator=Q5 Old Footprint=SOT23 New Footprint=SOT-89
+Change Component Comment : Designator=R35 Old Comment=1K New Comment=10K
+Change Component Comment : Designator=R36 Old Comment=1K New Comment=10K
+Change Component Comment : Designator=R8_1 Old Comment=1K New Comment=39K
+Change Component Comment : Designator=R8_2 Old Comment=1K New Comment=39K
+Change Component Comment : Designator=R8_3 Old Comment=1K New Comment=39K
+Change Component Comment : Designator=R8_4 Old Comment=1K New Comment=39K
+Change Component Comment : Designator=R31 Old Comment=1K New Comment=100K
+Change Component Comment : Designator=R9 Old Comment=10K New Comment=1K
+Change Component Comment : Designator=R3 Old Comment=10K New Comment=100K
+Change Component Comment : Designator=C24 Old Comment=22uF New Comment=10UF
+Change Component Comment : Designator=C28 Old Comment=100uF New Comment=100uF/16V
+Change Component Comment : Designator=R7_1 Old Comment=200K New Comment=6.8K
+Change Component Comment : Designator=R7_2 Old Comment=200K New Comment=6.8K
+Change Component Comment : Designator=R7_3 Old Comment=200K New Comment=6.8K
+Change Component Comment : Designator=R7_4 Old Comment=200K New Comment=6.8K
+Change Component Comment : Designator=R26 Old Comment=220K New Comment=680K
+Change Component Comment : Designator=R21 Old Comment=470R New Comment=1K
+Change Component Comment : Designator=C1 Old Comment=cap New Comment=1NF
+Change Component Comment : Designator=D9 Old Comment=DSK310 New Comment=US1M
+Change Component Comment : Designator=L1 Old Comment=inductor New Comment=680uH
+Change Component Comment : Designator=LED3 Old Comment=LED-1COLER New Comment=G
+Change Component Comment : Designator=R33 Old Comment=r New Comment=1K
+Change Component Comment : Designator=R34 Old Comment=r New Comment=6.8K
+Change Component Designator: OldDesignator=C? NewDesignator=C2
+Added Component: Designator=F?(PPTC)
+Added Component: Designator=LED4_1(LED/0805)
+Added Component: Designator=LED4_2(LED/0805)
+Added Component: Designator=LED4_3(LED/0805)
+Added Component: Designator=LED4_4(LED/0805)
+Added Component: Designator=R10_1(RES/0805)
+Added Component: Designator=R10_2(RES/0805)
+Added Component: Designator=R10_3(RES/0805)
+Added Component: Designator=R10_4(RES/0805)
+Added Component: Designator=R?(RES/0603)
+Added Component: Designator=T?(TO220AB)
+Added Pin To Net: NetName=SER_B Pin=F?-2
+Added Pin To Net: NetName=GND Pin=LED4_1-K
+Added Pin To Net: NetName=GND Pin=LED4_2-K
+Added Pin To Net: NetName=GND Pin=LED4_3-K
+Added Pin To Net: NetName=GND Pin=LED4_4-K
+Added Pin To Net: NetName=IN24_1 Pin=R10_1-2
+Added Pin To Net: NetName=IN24_2 Pin=R10_2-2
+Added Pin To Net: NetName=IN24_3 Pin=R10_3-2
+Added Pin To Net: NetName=IN24_4 Pin=R10_4-2
+Added Pin To Net: NetName=NetQ4_G Pin=R?-1
+Added Pin To Net: NetName=GND Pin=T?-3
+Added Pin To Net: NetName=NetF?_1 Pin=F?-1
+Added Pin To Net: NetName=NetF?_1 Pin=R2-2
+Added Net: Name=NetF?_1
+Added Pin To Net: NetName=NetLED4_1_A Pin=LED4_1-A
+Added Pin To Net: NetName=NetLED4_1_A Pin=R10_1-1
+Added Net: Name=NetLED4_1_A
+Added Pin To Net: NetName=NetLED4_2_A Pin=LED4_2-A
+Added Pin To Net: NetName=NetLED4_2_A Pin=R10_2-1
+Added Net: Name=NetLED4_2_A
+Added Pin To Net: NetName=NetLED4_3_A Pin=LED4_3-A
+Added Pin To Net: NetName=NetLED4_3_A Pin=R10_3-1
+Added Net: Name=NetLED4_3_A
+Added Pin To Net: NetName=NetLED4_4_A Pin=LED4_4-A
+Added Pin To Net: NetName=NetLED4_4_A Pin=R10_4-1
+Added Net: Name=NetLED4_4_A
+Added Pin To Net: NetName=NetR21_1 Pin=R21-1
+Added Pin To Net: NetName=NetR21_1 Pin=T?-1
+Added Net: Name=NetR21_1
+Added Pin To Net: NetName=NetR?_2 Pin=R?-2
+Added Pin To Net: NetName=NetR?_2 Pin=T?-2
+Added Net: Name=NetR?_2
+Added Member To Class: ClassName=U_SER_24V Member=Component F? fuze
+Added Member To Class: ClassName=1 Member=Component LED4_1 (LED4) R
+Added Member To Class: ClassName=2 Member=Component LED4_2 (LED4) R
+Added Member To Class: ClassName=3 Member=Component LED4_3 (LED4) R
+Added Member To Class: ClassName=4 Member=Component LED4_4 (LED4) R
+Added Member To Class: ClassName=1 Member=Component R10_1 (R10) 6.8K
+Added Member To Class: ClassName=2 Member=Component R10_2 (R10) 6.8K
+Added Member To Class: ClassName=3 Member=Component R10_3 (R10) 6.8K
+Added Member To Class: ClassName=4 Member=Component R10_4 (R10) 6.8K
+Added Member To Class: ClassName=U_MP3 Member=Component R? 100R
+Added Member To Class: ClassName=U_MP3 Member=Component T? 7002

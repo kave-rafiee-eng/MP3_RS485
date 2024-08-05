@@ -1,0 +1,3 @@
+Removed Pin From Net: NetName=GND Pin=Q3-4
+Removed Pin From Net: NetName=+24 Pin=Q5-4
+Change Component Footprint: Designator=T? Old Footprint=TO220AB New Footprint=SOT23
