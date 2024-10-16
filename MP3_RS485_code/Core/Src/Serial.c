@@ -143,8 +143,8 @@ void CAB_SerialDataTransmition(void)
 													((uint8_t)In_REV << 3) | ((uint8_t)In_UP << 2) | ((uint8_t)In_DN << 1) | In_STP;
 			CAB_TX_Buffer[9] = CAB_TX_Buffer[8];
 			
-			CAB_TX_Buffer[10] = BatteryVoltage * 30; //Accuracy 0.033
-			CAB_TX_Buffer[11] = 100;
+			CAB_TX_Buffer[10] = BatteryVoltage * 40; //Accuracy 0.033
+			CAB_TX_Buffer[11] = 120;
 			CAB_TX_Buffer[12] = 0;
 			SerialSendData(13);
 			NewPacketF = 0;

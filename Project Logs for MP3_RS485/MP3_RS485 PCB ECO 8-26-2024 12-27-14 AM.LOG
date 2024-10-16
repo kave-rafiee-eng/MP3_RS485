@@ -1,0 +1,76 @@
+Change Component Designator: OldDesignator=F? NewDesignator=F1
+Change Component Designator: OldDesignator=R? NewDesignator=R11
+Change Component Designator: OldDesignator=T? NewDesignator=T1
+Added Component: Designator=BR1(BRIDGE_GBU410)
+Added Component: Designator=D1(mini_melf)
+Added Component: Designator=D2(mini_melf)
+Added Component: Designator=DOOR2(CONECTOR/FONIX/3PIN)
+Added Component: Designator=R12(RES/0805)
+Added Component: Designator=R13(RES/0805)
+Added Component: Designator=R14(RES/0805)
+Added Component: Designator=R29(RES/0805)
+Added Component: Designator=RELAY1(RELAY-5V)
+Added Component: Designator=RELAY2(RELAY-5V)
+Added Component: Designator=T2(TO220AB)
+Added Component: Designator=T3(TO220AB)
+Added Component: Designator=UR_DC(CONECTOR/FONIX/2PIN)
+Added Component: Designator=URIN(CONECTOR/FONIX/2PIN)
+Added Pin To Net: NetName=+24 Pin=D1-K
+Added Pin To Net: NetName=+24 Pin=D2-K
+Added Pin To Net: NetName=GND Pin=R13-1
+Added Pin To Net: NetName=GND Pin=R29-1
+Added Pin To Net: NetName=+24 Pin=RELAY1-5
+Added Pin To Net: NetName=+24 Pin=RELAY2-5
+Added Pin To Net: NetName=GND Pin=T2-3
+Added Pin To Net: NetName=GND Pin=T3-3
+Change Net Name : Old Net Name=NetF?_1 New Net Name=NetF1_1
+Change Net Name : Old Net Name=NetR?_2 New Net Name=NetR11_2
+Added Pin To Net: NetName=NetBR1_+ Pin=BR1-+
+Added Pin To Net: NetName=NetBR1_+ Pin=UR_DC-2
+Added Net: Name=NetBR1_+
+Added Pin To Net: NetName=NetBR1_- Pin=BR1--
+Added Pin To Net: NetName=NetBR1_- Pin=UR_DC-1
+Added Net: Name=NetBR1_-
+Added Pin To Net: NetName=NetBR1_F Pin=BR1-F
+Added Pin To Net: NetName=NetBR1_F Pin=RELAY2-4
+Added Net: Name=NetBR1_F
+Added Pin To Net: NetName=NetBR1_N Pin=BR1-N
+Added Pin To Net: NetName=NetBR1_N Pin=URIN-1
+Added Net: Name=NetBR1_N
+Added Pin To Net: NetName=NetD1_A Pin=D1-A
+Added Pin To Net: NetName=NetD1_A Pin=RELAY1-3
+Added Pin To Net: NetName=NetD1_A Pin=T2-2
+Added Net: Name=NetD1_A
+Added Pin To Net: NetName=NetD2_A Pin=D2-A
+Added Pin To Net: NetName=NetD2_A Pin=RELAY2-3
+Added Pin To Net: NetName=NetD2_A Pin=T3-2
+Added Net: Name=NetD2_A
+Added Pin To Net: NetName=NetDOOR2_1 Pin=DOOR2-1
+Added Pin To Net: NetName=NetDOOR2_1 Pin=RELAY1-2
+Added Net: Name=NetDOOR2_1
+Added Pin To Net: NetName=NetDOOR2_2 Pin=DOOR2-2
+Added Pin To Net: NetName=NetDOOR2_2 Pin=RELAY1-4
+Added Net: Name=NetDOOR2_2
+Added Pin To Net: NetName=NetDOOR2_3 Pin=DOOR2-3
+Added Pin To Net: NetName=NetDOOR2_3 Pin=RELAY1-1
+Added Net: Name=NetDOOR2_3
+Added Pin To Net: NetName=NetR12_2 Pin=R12-2
+Added Pin To Net: NetName=NetR12_2 Pin=R13-2
+Added Pin To Net: NetName=NetR12_2 Pin=T2-1
+Added Net: Name=NetR12_2
+Added Pin To Net: NetName=NetR14_2 Pin=R14-2
+Added Pin To Net: NetName=NetR14_2 Pin=R29-2
+Added Pin To Net: NetName=NetR14_2 Pin=T3-1
+Added Net: Name=NetR14_2
+Added Pin To Net: NetName=NetRELAY2_1 Pin=RELAY2-1
+Added Pin To Net: NetName=NetRELAY2_1 Pin=URIN-2
+Added Net: Name=NetRELAY2_1
+Added Pin To Net: NetName=NetRELAY2_2 Pin=RELAY2-2
+Added Net: Name=NetRELAY2_2
+Added Pin To Net: NetName=RELAY1 Pin=MCU1-17
+Added Pin To Net: NetName=RELAY1 Pin=R12-1
+Added Net: Name=RELAY1
+Added Pin To Net: NetName=RELAY2 Pin=MCU1-16
+Added Pin To Net: NetName=RELAY2 Pin=R14-1
+Added Net: Name=RELAY2
+Added Class: Name=U_RELAY

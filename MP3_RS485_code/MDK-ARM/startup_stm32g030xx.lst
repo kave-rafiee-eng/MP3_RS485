@@ -355,10 +355,9 @@ Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M0+ --apcs=inter
 work --depend=mp3_rs485\startup_stm32g030xx.d -omp3_rs485\startup_stm32g030xx.o
  -I.\RTE\_MP3_RS485 -IC:\Users\kave\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMS
 IS\Core\Include -IC:\Users\kave\AppData\Local\Arm\Packs\Keil\STM32G0xx_DFP\1.5.
-0\Drivers\CMSIS\Device\ST\STM32G0xx\Include --predefine="__EVAL SETA 1" --prede
-fine="__UVISION_VERSION SETA 534" --predefine="_RTE_ SETA 1" --predefine="STM32
-G030xx SETA 1" --predefine="_RTE_ SETA 1" --list=startup_stm32g030xx.lst startu
-p_stm32g030xx.s
+0\Drivers\CMSIS\Device\ST\STM32G0xx\Include --predefine="__UVISION_VERSION SETA
+ 534" --predefine="_RTE_ SETA 1" --predefine="STM32G030xx SETA 1" --predefine="
+_RTE_ SETA 1" --list=startup_stm32g030xx.lst startup_stm32g030xx.s
 
 
 
@@ -844,4 +843,4 @@ Symbol: __use_two_region_memory
       None
 Comment: __use_two_region_memory unused
 3 symbols
-386 symbols in table
+385 symbols in table

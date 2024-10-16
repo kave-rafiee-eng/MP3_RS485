@@ -1,0 +1,19 @@
+Change Component Designator: OldDesignator=R13 NewDesignator=R13 
+Added Component: Designator=D2(LED/0805)
+Added Component: Designator=R?(RES/0603)
+Added Component: Designator=R?(RES/0603)
+Added Component: Designator=URA(LED/0805)
+Added Pin To Net: NetName=+24 Pin=D2-A
+Added Pin To Net: NetName=NetD1_A Pin=R?-2
+Added Pin To Net: NetName=NetD2_A Pin=R?-2
+Added Pin To Net: NetName=+24 Pin=URA-A
+Added Pin To Net: NetName=NetD2_K Pin=D2-K
+Added Pin To Net: NetName=NetD2_K Pin=R?-1
+Added Net: Name=NetD2_K
+Added Pin To Net: NetName=NetR?_1 Pin=R?-1
+Added Pin To Net: NetName=NetR?_1 Pin=URA-K
+Added Net: Name=NetR?_1
+Added Member To Class: ClassName=U_RELAY Member=Component D2 4148
+Added Member To Class: ClassName=U_RELAY Member=Component R? 10K
+Added Member To Class: ClassName=U_RELAY Member=Component R? 10K
+Added Member To Class: ClassName=U_RELAY Member=Component URA LED?

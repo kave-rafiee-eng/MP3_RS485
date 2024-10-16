@@ -84,29 +84,50 @@ int main(void)
   MP3TrackPlayer(0,7); //Welcome
 	MP3TrackPlayer(0,3); //Welcome
 
+	IWDG->KR = 0x0000CCCC; //Enable WDT
+	IWDG->KR = 0x00005555; //To Access Registers
+	IWDG->PR = 0x00000000; //Div=4
+	IWDG->RLR = 0x00000333; //For 100ms*/
+	
   while (1)
   {
 	
+		HAL_Delay(10);
+		
+		if( CMD_URA )URA_RELAY(1);
+		else URA_RELAY(0);
+		
+		if( CMD_Door1 )DOOR1_RELAY(1);
+		else DOOR1_RELAY(0);
+		
 		WDT_RESET;
 		
+		/*while(1){
+			WDT_RESET;
+
+			HAL_Delay(5);
+		}*/
 		//////////////////////////////////////////////////////////////////////////
 		///////////////////////////   Call Task 5 Ms   ///////////////////////////
 		//////////////////////////////////////////////////////////////////////////
 		if(Task5MsTimer > 4)
 		{
-			Task5MsTimer -= 5;
+ 			Task5MsTimer -= 5;
 			
 			GetDataTimer ++;
 			if(GetDataTimer > 400)
 			{
-				USART1_Init();		//UART2 For Data Transmition with Main Board
-				CRXDataCNT = CAB_RX_DMA_CNT;
-				SyncStatus = 0;
-				PacketLen = 0;
-				DMA1_CH3_Init();	//DMA For UART2 TX 
-				DMA1_CH4_Init();	//DMA For UART2 RX 
+					USART1_Init();		//UART2 For Data Transmition with Main Board
+					CRXDataCNT = CAB_RX_DMA_CNT;
+					SyncStatus = 0;
+					PacketLen = 0;
+					DMA1_CH3_Init();	//DMA For UART1 TX 
+					DMA1_CH4_Init();	//DMA For UART1 RX 
+					while(1){
+						HAL_Delay(5);
+					}
 			}
-			
+
 			////////////////////////////
 			///// Inputs Debouncer /////
 			////////////////////////////
@@ -121,6 +142,8 @@ int main(void)
 		//////////////////////////////////////////////////////////////////////////
 		if(Task100MsTimer > 99) 
 		{
+			
+			SerialSendData(sprintf(CAB_TX_Buffer,"kave") );
 			Task100MsTimer -= 100;
 			
 			if(RunOrStop == STOP) 
@@ -161,7 +184,6 @@ int main(void)
 		{
 			Task1MinuteTimer -= 60; //60	
 		}
-		
 		
 		//////////////////////////////////////////////////////////////////////////
 		///////////////////////////    Serial Cabin    ///////////////////////////

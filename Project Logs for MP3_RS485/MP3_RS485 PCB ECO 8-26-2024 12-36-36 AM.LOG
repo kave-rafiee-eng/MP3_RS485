@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=NetBR1_F Pin=RELAY2-4
+Removed Pin From Net: NetName=NetBR1_N Pin=URIN-1
+Added Pin To Net: NetName=NetBR1_N Pin=RELAY2-4
+Added Pin To Net: NetName=NetBR1_F Pin=URIN-1

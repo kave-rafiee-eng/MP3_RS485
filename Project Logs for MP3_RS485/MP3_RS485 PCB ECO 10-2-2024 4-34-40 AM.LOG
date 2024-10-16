@@ -1,0 +1,3 @@
+Added Pin To Net: NetName=IN5 Pin=MCU1-15
+Added Member To Class: ClassName=U_RELAY Member=Component D2 4148
+Added Member To Class: ClassName=U_RELAY Member=Component R? 10K

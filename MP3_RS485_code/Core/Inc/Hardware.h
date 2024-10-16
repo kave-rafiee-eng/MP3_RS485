@@ -3,10 +3,13 @@
 
 #define	LED_LINK(x)          		(x ? (GPIOC ->BSRR =GPIO_PIN_14) : (GPIOC ->BRR =GPIO_PIN_14) ) 
 
-#define	MP3_PWR(x)          		(x ? (GPIOA ->BRR =GPIO_PIN_0) : (GPIOA ->BSRR =GPIO_PIN_0) ) 
+#define	MP3_PWR(x)          		(x ?   (GPIOA ->BSRR =GPIO_PIN_0) : (GPIOA ->BRR =GPIO_PIN_0) ) 
 #define MP3_BUSY     	  				((GPIOA->IDR & GPIO_PIN_1) && 1) 
 
 #define UARTM_TX(x) 		      	(x ? (GPIOA ->BSRR =GPIO_PIN_2) : (GPIOA ->BRR =GPIO_PIN_2) ) 
+
+#define URA_RELAY(x) 		      	(x ? (GPIOA ->BSRR =GPIO_PIN_12) : (GPIOA ->BRR =GPIO_PIN_12) ) 
+#define DOOR1_RELAY(x) 		      	(x ? (GPIOA ->BSRR =GPIO_PIN_11) : (GPIOA ->BRR =GPIO_PIN_11) ) 
 
 #define WDT_RESET 	IWDG->KR = 0x0000AAAA
 

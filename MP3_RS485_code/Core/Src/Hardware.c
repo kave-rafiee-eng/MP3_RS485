@@ -22,7 +22,7 @@ extern	volatile	char				CAB_RX_Buffer[CAB_RX_BUFFER_SIZE];
 extern	volatile	uint8_t			InDebTimer[8];
 
 /////////	Program
-extern	volatile	_Bool				In_IN,In_PHC,In_DO,In_OVL,In_REV,In_UP,In_DN,In_STP;
+extern	volatile	_Bool				In_IN,In_PHC,In_DO,In_OVL,In_REV,In_UP,In_DN,In_STP,T_DO,T_PHC;
 
 
 void SystemClock_Config(void)
@@ -114,7 +114,7 @@ void MX_GPIO_Init(void)
 	 
 	
 	GPIO_InitStruct.Pin = GPIO_PIN_0; //MP3_POWER
-  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_OD;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
@@ -128,7 +128,7 @@ void MX_GPIO_Init(void)
 	GPIO_InitStruct.Pin = GPIO_PIN_2; //MP3_TX
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);		
 	
 	GPIO_InitStruct.Pin = GPIO_PIN_4; //HV_REV
@@ -141,6 +141,27 @@ void MX_GPIO_Init(void)
 		
 	GPIO_InitStruct.Pin = GPIO_PIN_6; //HV_DN
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+
+	GPIO_InitStruct.Pin = GPIO_PIN_7; //HV_DN
+  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);		
+	
+	GPIO_InitStruct.Pin = GPIO_PIN_0; //HV_DO
+  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);		
+	
+	GPIO_InitStruct.Pin = GPIO_PIN_11; //DOOR 1
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);		
+	
+		
+	GPIO_InitStruct.Pin = GPIO_PIN_12; //URA
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);		
 	
 }
@@ -165,6 +186,7 @@ void USART1_Init(void)
 	RCC->APBENR2 |= RCC_APBENR2_USART1EN;    // enable USART1 clock
 
 	USART1->BRR   = 0x1A0B;                  // 9600 baud @ PCLK2 64MHz
+	//USART1->BRR   = 6630;
 	USART1->CR1   = 0;                       // Clear Control Register 1
 	USART1->CR1   = USART_CR1_TE  | USART_CR1_RE;     // enable TX & RX
 
@@ -190,7 +212,7 @@ void DMA1_CH3_Init(void)
 
 	DMA1_Channel3->CMAR  = (uint32_t) &USART1->TDR;    	/* set chn1 memory address    */
 	DMA1_Channel3->CPAR  = (uint32_t) CAB_TX_Buffer;    		/* set chn1 peripheral address*/
-	DMA1_Channel3->CNDTR = sizeof(CAB_TX_Buffer)-1;     		/* transmit size word         */
+	DMA1_Channel3->CNDTR = 0;     		/* transmit size word         */
 	
 	/* configure DMA channel      */
 	DMA1_Channel3->CCR	= 	(0<<14) |       //Memory to memory mode Enable
@@ -263,6 +285,8 @@ void Inputs_Debouncer(void)
 	HwIn_Rev = HAL_GPIO_ReadPin(GPIOA,GPIO_PIN_4);
 	HwIn_RevUP = HAL_GPIO_ReadPin(GPIOA,GPIO_PIN_5);	
 	HwIn_RevDN = HAL_GPIO_ReadPin(GPIOA,GPIO_PIN_6);	
+	HwIn_STP = HAL_GPIO_ReadPin(GPIOA,GPIO_PIN_7);	
+	HwIn_DO = HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_0);	
 	
 	
 	if(HwIn_Rev)		{if(InDebTimer[4] < 20) {InDebTimer[4]++;} 	else {In_REV= 1;}}
@@ -274,6 +298,13 @@ void Inputs_Debouncer(void)
 	if(HwIn_RevDN)	{if(InDebTimer[6] < 20) {InDebTimer[6]++;} 	else {In_DN = 1;}}
 	else            {if(InDebTimer[6] > 0) 	{InDebTimer[6]--;}	else {In_DN	= 0;}}
 	
+	if(HwIn_STP)	{if(InDebTimer[7] < 20) {InDebTimer[7]++;} 	else {In_STP = 1;}}
+	else          {if(InDebTimer[7] > 0) 	{InDebTimer[7]--;}	else {In_STP	= 0;}}
+		
+	if(HwIn_DO)	{if(InDebTimer[3] < 20) {InDebTimer[3]++;} 	else { T_PHC = 0;}}
+	else          {if(InDebTimer[3] > 0) 	{InDebTimer[3]--;}	else {T_PHC	= 1;}}
+	
+	T_DO = T_PHC;
 }
 
 

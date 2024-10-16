@@ -1,0 +1,7 @@
+Removed Pin From Net: NetName=NetD3_A Pin=D3-A
+Removed Pin From Net: NetName=TX1 Pin=D3-K
+Removed Pin From Net: NetName=+3.3 Pin=R37-1
+Removed Member From Class: ClassName=U_SER_24V Member=D3
+Added Pin To Net: NetName=+24 Pin=R37-1
+Change Net Name : Old Net Name=NetD3_A New Net Name=NetIC3_3
+Added Member To Class: ClassName=U_RELAY Member=Component D2 4148

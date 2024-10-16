@@ -1,0 +1,14 @@
+Change Component Designator: OldDesignator=R? NewDesignator=R38
+Change Component Designator: OldDesignator=R? NewDesignator=R39
+Added Component: Designator=D3(DIOD/1N4007/SMD)
+Added Component: Designator=R37(RES/0603)
+Added Pin To Net: NetName=NetIC3_3 Pin=D3-A
+Added Pin To Net: NetName=TX1 Pin=D3-K
+Added Pin To Net: NetName=+3.3 Pin=R37-1
+Added Pin To Net: NetName=NetIC3_3 Pin=R37-2
+Change Net Name : Old Net Name=NetIC3_3 New Net Name=NetD3_A
+Change Net Name : Old Net Name=NetR?_1 New Net Name=NetR38_1
+Added Member To Class: ClassName=U_RELAY Member=Component D2 4148
+Added Member To Class: ClassName=U_SER_24V Member=Component D3 4148
+Added Member To Class: ClassName=U_SER_24V Member=Component R37 1K
+Added Member To Class: ClassName=U_RELAY Member=Component R39 10K

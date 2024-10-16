@@ -1,0 +1,41 @@
+Removed Pin From Net: NetName=IN24_1 Pin=CN1-1
+Removed Pin From Net: NetName=IN24_2 Pin=CN1-2
+Removed Pin From Net: NetName=IN24_3 Pin=CN1-3
+Removed Pin From Net: NetName=IN24_4 Pin=CN1-4
+Removed Member From Class: ClassName=Multi Member=CN1
+Change Component Designator: OldDesignator=R13  NewDesignator=R13
+Added Component: Designator=*(phonix_5pin)
+Added Component: Designator=C8_5(CAP-0603)
+Added Component: Designator=LED4_5(LED/0805)
+Added Component: Designator=R7_5(RES/0805)
+Added Component: Designator=R8_5(RES/0805)
+Added Component: Designator=R10_5(RES/0805)
+Added Component: Designator=Z1_5(mini_melf)
+Added Pin To Net: NetName=IN24_1 Pin=*-1
+Added Pin To Net: NetName=IN24_2 Pin=*-2
+Added Pin To Net: NetName=IN24_3 Pin=*-3
+Added Pin To Net: NetName=IN24_4 Pin=*-4
+Added Pin To Net: NetName=GND Pin=C8_5-1
+Added Pin To Net: NetName=GND Pin=LED4_5-K
+Added Pin To Net: NetName=GND Pin=R8_5-1
+Added Pin To Net: NetName=GND Pin=Z1_5-A
+Added Pin To Net: NetName=IN5 Pin=C8_5-2
+Added Pin To Net: NetName=IN5 Pin=R7_5-2
+Added Pin To Net: NetName=IN5 Pin=R8_5-2
+Added Pin To Net: NetName=IN5 Pin=Z1_5-K
+Added Net: Name=IN5
+Added Pin To Net: NetName=IN24_5 Pin=*-5
+Added Pin To Net: NetName=IN24_5 Pin=R7_5-1
+Added Pin To Net: NetName=IN24_5 Pin=R10_5-2
+Added Net: Name=IN24_5
+Added Pin To Net: NetName=NetLED4_5_A Pin=LED4_5-A
+Added Pin To Net: NetName=NetLED4_5_A Pin=R10_5-1
+Added Net: Name=NetLED4_5_A
+Change Class Name : Old Net Name=IN[1..4] New Net Name=IN[1..5]
+Added Class: Name=5
+Added Class: Name=IN_24_[1..5]
+Added Member To Class: ClassName=Multi Member=Component * phonix_5pin
+Added Member To Class: ClassName=U_RELAY Member=Component D2 4148
+Added Member To Class: ClassName=U_RELAY Member=Component R13 r
+Added Member To Class: ClassName=U_RELAY Member=Component R? 10K
+Added Member To Class: ClassName=IN[1..5] Member=Element[4]: IN
